@@ -15,10 +15,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(binding.root)
-        viewModel.responseLiveData.observe(this) {
-            binding.tvData.text = it.products.toString()
-        }
-        viewModel.getProducts()
+        setContentView(R.layout.activity_main)
     }
 }

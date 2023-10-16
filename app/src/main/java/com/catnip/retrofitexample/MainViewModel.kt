@@ -6,10 +6,7 @@ import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-/**
-Written with love by Muhammad Hermas Yuda Pamungkas
-Github : https://github.com/hermasyp
- **/
+
 class MainViewModel : ViewModel() {
     val service: ProductService by lazy {
         ProductService.invoke()
